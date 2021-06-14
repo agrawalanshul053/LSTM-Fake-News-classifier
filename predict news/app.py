@@ -10,7 +10,7 @@ import torch.nn as nn
 app = Flask(__name__)
 device = 'cpu'
 text_field  = pickle.load(open('TextField.pkl', 'rb'))
-path='F:\Downloads\Project under Jivnesh pr\machine-learning-deployment-2\lstm\Model\model.pt'
+path='F:\Downloads\Project under Jivnesh pr\machine-learning-deployment-2\lstm\Model\model.pt' # You can enter path according to your requirement and file location
 
 class LSTM(nn.Module):                             # Inheriting class nn.Module
                                                    # LSTM is child class/sub class and nn.Module is parent/ super class
