@@ -8,7 +8,7 @@ import pickle
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 import torch.nn as nn
 app = Flask(__name__)
-device = 'cpu'
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 text_field  = pickle.load(open('TextField.pkl', 'rb'))
 path='F:\Downloads\Project under Jivnesh pr\machine-learning-deployment-2\lstm\Model\model.pt' # You can enter path according to your requirement and file location
 
